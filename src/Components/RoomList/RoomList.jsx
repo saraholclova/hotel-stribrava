@@ -12,7 +12,7 @@ export const RoomList = () => {
     };
     fetchRooms();
   }, []);
-  console.log(rooms);
+
   if (rooms === null) {
     return <p>Loading...</p>;
   }
@@ -25,9 +25,11 @@ export const RoomList = () => {
           {rooms.map((room) => (
             <Room
               key={room.id}
+              id={room.id}
               name={room.name}
               price={room.price}
               image={`http://localhost:4000/assets/${room.image}`}
+              onSelect={setSelectedRoom}
             />
           ))}
         </div>
