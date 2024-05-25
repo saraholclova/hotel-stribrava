@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@400;700&display=swap');
 
+
 * {
   box-sizing: border-box;
 }
@@ -76,7 +77,7 @@ img {
 .banner {
   width: 100%;
   aspect-ratio: 16/9;
-  background-image: url(./img/image2.svg);
+  background-image: url(components/Header/hotel.jpg);
   background-size: cover;
 }
 
