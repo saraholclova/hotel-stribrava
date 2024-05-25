@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 
+
 export const RoomDetail = ({ roomId }) => {
   const [room, setRoom] = useState(null);
 
