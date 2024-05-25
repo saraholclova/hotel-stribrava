@@ -12,19 +12,18 @@ export const RoomDetail = ({ roomId }) => {
     fetchRoom();
   }, [roomId]);
 
+  if (room === null) {
+    return null;
+  }
+
   return (
     <section className="light">
       <div className="container">
         <h2>{room.name}</h2>
         <div className="columns-2">
           <div className="column">
-            <img src="img/image1.svg" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
-              accusantium, dolor quisquam doloremque quod nobis temporibus
-              ducimus sapiente consectetur distinctio assumenda, nisi suscipit
-              saepe. Vero.
-            </p>
+            <img src={`http://localhost:4000/assets/${room.image}`} />
+            <p>{room.detail}</p>
           </div>
           <form>
             <div className="form-fields">
