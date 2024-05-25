@@ -4,7 +4,7 @@ import { RoomDetail } from '../RoomDetail/RoomDetail';
 
 export const RoomList = () => {
   const [rooms, setRooms] = useState(null);
-  const [selectedRoom, setSelectedRoom] = useState(null);
+  const [selectedRoom, setSelectedRoom] = useState(1);
   useEffect(() => {
     const fetchRooms = async () => {
       const response = await fetch('http://localhost:4000/api/rooms');
