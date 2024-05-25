@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 
+
 export const RoomDetail = ({ roomId }) => {
   const [room, setRoom] = useState(null);
 
